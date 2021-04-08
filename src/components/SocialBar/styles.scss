@@ -1,0 +1,14 @@
+.social-bar{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    &__icon {
+        width: 20%;
+        height: 100%;
+        cursor: pointer;
+    }
+}

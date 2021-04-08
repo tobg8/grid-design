@@ -1,0 +1,18 @@
+.app {
+    background-color: #FFEE2C;
+    height: auto;
+    width: 100%;
+    &__main {
+        height: auto;
+        min-height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+
+.test {
+    display: block;
+}

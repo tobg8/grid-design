@@ -1,0 +1,56 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    &__title {
+        text-align: left;
+        width: 80%;
+        font-size: 1em;
+        text-transform: uppercase;
+        
+        padding-bottom: 1em;
+        letter-spacing: 1px;
+    }
+    &__companies {
+        border-bottom: 1px solid black;
+        padding: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        max-height: 130px;
+        &--modifier {
+            border-top: 1px solid black;
+            padding: 0.5em;
+        }
+    }
+    &__company {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-logo {
+            height: 50%;
+            width: 50%;
+            &--modifier-apple {
+                transform: scale(1);
+            }
+            &--modifier-wolf {
+                transform: scale(3);
+            }
+            &--modifier-virgin {
+                transform: scale(1.2);
+            }
+            &--modifier-swoosh {
+                transform: scale(0.8);
+            }
+            &--modifier-fb {
+                width: 100%;
+                transform: scale(0.5);
+            }
+            &--modifier-twitch {
+                transform: scale(1.1);
+            }
+            &--modifier-eth {
+                transform: scale(1.3);
+            }
+        }
+    }
+}

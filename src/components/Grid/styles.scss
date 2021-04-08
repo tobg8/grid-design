@@ -1,0 +1,276 @@
+.grid-container {
+    max-height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #FFEE2C;
+    border: 3px solid black;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    margin-bottom: 2em;
+}
+.square {
+    background-color:#FFEE2C;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    &__0 {
+        display: flex;
+        padding-left: 0.7em;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+        box-shadow: 1px 0px 0px 0px;
+        min-height: width;
+        &:after {
+            content:'future london academy';
+            color: black;
+            font-weight: bold;
+            line-height: 1.1;
+            width: 75%;
+        }
+        &:before {
+            content:'';
+            display: block;
+            padding-top: 100%;
+            float: left;
+            
+        }
+    }
+    &__1 {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid black;
+        animation: squareReduce 5s infinite;
+        animation-delay: 2s;
+    }
+    &__2 {
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+        box-shadow: -1px 0px 0px 0px;
+        &:after {
+            content:'july 2020';
+            transform: rotate(-45deg);
+            font-weight: bold;
+        }
+    }
+    &__3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFEE2C;
+        height: 97%;
+        width: 97%;
+        background-color: black;
+        border-radius: 50%;
+        border-left: 3px solid black;
+        animation: flip 3s infinite;
+        animation-timing-function: cubic-bezier(1,.02,.32,.84);
+        &:before {
+            content:'';
+            display: block;
+            padding-top: 100%;
+            float: left;
+            
+        }
+    }
+    &__4 {
+        outline: 3px solid black;
+        box-shadow: 0px -1px 0px 0px;
+        
+    }
+    &__5 {
+        outline: 3px solid black;
+        &:before {
+            content:'';
+            display: block;
+            padding-top: 100%;
+            float: left;
+            
+        }
+    }
+    &__6 {
+        // border-left: 3px solid black;
+        // border-right: 3px solid black;
+        // border-top: 3px solid black;
+        outline: 3px solid black;
+        z-index: 1;
+    }
+    &__7 {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: width;
+        &:after {
+            content:'Apply Now';
+            color: #FFEE2C;
+        }
+        &:before {
+            content:'';
+            display: block;
+            padding-top: 100%;
+            float: left;
+            
+        }
+    }
+    &__8 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border-bottom-left-radius: 120px;
+        padding-left: 0.1em;
+        border-top-left-radius: 120px;
+        border-left: 0;
+    }
+    &__9 {
+        outline: 3px solid black;
+        &:before {
+            content:'';
+            display: block;
+            padding-top: 100%;
+            float: left;
+            
+        }
+    }
+    &__10 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+        z-index: 1;
+        
+        &:after {
+            content:'Finally, a business programme for design leaders';
+            line-height: 0.9;
+            font-weight: bold;
+            font-size: 1.2em;
+            width: 80%;
+        }
+    }
+    &__11 {
+        background-color: #FFEE2C;
+        box-sizing: border-box;
+        // background-image: url(../../assets/black-circle.svg);
+        // background-position: 0 100%;
+        // background-repeat: repeat-y;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        animation: moveCircle 4s infinite;
+        animation-timing-function:  ease-in-out;
+        border-radius: 50%;
+        border: 10px solid black;
+        z-index: 0;
+        &:after {
+            content:'';
+            height: 100%;
+            width: 100%;     
+        }
+    }
+    &__12 {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        &:after {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            content:url('../../assets/swoosh.svg');
+            filter: invert(87%) sepia(94%) saturate(1019%) hue-rotate(329deg) brightness(107%) contrast(104%);
+        }
+    }
+    &__13 {
+        display: flex;
+        background-color: black;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        z-index: 0;
+        outline: 1px solid black;
+        &:before {
+            content:'';
+            display: block;
+            padding-top: 33%;
+            float: left;
+            
+        }
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes squareReduce {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    15% {
+        transform: scale(.5) rotate(0deg);
+        border: 25px solid black;
+    }
+    30% {
+        transform: scale(.5) rotate(180deg);
+        border: 25px solid black;
+    }
+    45%, 100% {
+        border: 10px solid black;
+        transform: scale(1) rotate(180deg);
+    }
+}
+
+@keyframes moveCircle {
+    0%, 20% { 
+        
+        transform: translateY(0); 
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(-8em);
+        opacity: 0;
+    }
+    40% {
+        transform: translateY(8em);
+        opacity: 0;
+        
+    }
+    70% {
+        opacity: 1;
+    }
+    90%, 100% {
+        transform: translateY(0);
+        
+        opacity: 1;
+    }
+}
