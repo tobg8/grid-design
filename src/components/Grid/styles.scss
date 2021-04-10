@@ -1,10 +1,12 @@
+@import '../../styles/vars';
+
 .grid-container {
     max-height: 100%;
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: #FFEE2C;
+    background-color: $yellow;
     border: 3px solid black;
     z-index: 1;
     position: absolute;
@@ -12,7 +14,7 @@
     margin-bottom: 2em;
 }
 .square {
-    background-color:#FFEE2C;
+    background-color:$yellow;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     &__0 {
@@ -66,7 +68,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #FFEE2C;
+        background-color: $yellow;
         height: 97%;
         width: 97%;
         background-color: black;
@@ -98,9 +100,6 @@
         }
     }
     &__6 {
-        // border-left: 3px solid black;
-        // border-right: 3px solid black;
-        // border-top: 3px solid black;
         outline: 3px solid black;
         z-index: 1;
     }
@@ -112,7 +111,7 @@
         max-height: width;
         &:after {
             content:'Apply Now';
-            color: #FFEE2C;
+            color: $yellow;
         }
         &:before {
             content:'';
@@ -169,7 +168,7 @@
         }
     }
     &__11 {
-        background-color: #FFEE2C;
+        background-color: $yellow;
         box-sizing: border-box;
         // background-image: url(../../assets/black-circle.svg);
         // background-position: 0 100%;

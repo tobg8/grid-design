@@ -1,3 +1,5 @@
+@import '../../styles/vars';
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -21,14 +23,50 @@
             padding: 0.5em;
         }
     }
+    &__hover-circle {
+        background-color: black;
+        visibility: hidden;
+        font-size: 0;
+        height: 0%;
+        width : 0%;
+        border-radius: 50%;
+        position: absolute;
+        color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        transition: all 600ms ease;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+    }
     &__company {
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        &:hover .container__hover-circle{
+            background-color: black;
+            opacity: 1;
+            height: 118%;
+            width: 80%;
+            visibility: visible;
+            font-size: 1.2em;
+        }
+        &:hover .container__hover-circle--modifier {
+            background-color: black;
+            opacity: 1;
+            height: 140%;
+            width: 80%;
+            visibility: visible;
+            font-size: 1.2em;
+        }
         &-logo {
             height: 50%;
             width: 50%;
+            position: relative;
             &--modifier-apple {
                 transform: scale(1);
             }

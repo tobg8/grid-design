@@ -1,5 +1,7 @@
+@import '../../styles/vars';
+
 .app {
-    background-color: #FFEE2C;
+    background-color: $yellow;
     height: auto;
     max-width: 100%;
     overflow: hidden;
@@ -11,9 +13,4 @@
         justify-content: space-between;
         flex-direction: column;
     }
-}
-
-
-.test {
-    display: block;
 }
