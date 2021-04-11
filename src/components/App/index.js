@@ -5,6 +5,7 @@ import Grid from '../Grid'
 import SocialBar from '../SocialBar'
 import Infos from '../Infos'
 import ExpertsCompanies from '../ExpertsCompanies';
+import Teachers from '../Teachers';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
         <SocialBar />
         <Infos />
         <ExpertsCompanies />
-        <div>Okkkkkkkkkkkkkk</div>
+        <Teachers />
     </div>
   );
 };
