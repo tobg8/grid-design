@@ -6,6 +6,10 @@ const GrowElementOnScroll = (options) => {
 
     const callbackFunction = (entries) => {
         const [entry] = entries;
+        // we don't want to reset state to false, our circle will get his final form once and for all
+        if (entry.isIntersecting === false) {
+            return
+        }
         setIsVisible(entry.isIntersecting);
     }
 
@@ -13,8 +17,9 @@ const GrowElementOnScroll = (options) => {
         const currentRef = circleRef.current;
         const observer = new IntersectionObserver(callbackFunction, options);
 
-        if (circleRef.current) observer.observe(circleRef.current);
-
+        if (circleRef.current) {
+            observer.observe(circleRef.current);
+        }
         return () => {
             if (currentRef) observer.unobserve(currentRef)
         }
