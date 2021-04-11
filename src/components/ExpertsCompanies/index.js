@@ -127,7 +127,6 @@ const ExpertsCompanies = () => {
                     <a className="container__hover-circle container__hover-circle--modifier" href="https://ethereum.org/fr/" target="_blank" rel="noreferrer">
                         Ethereum
                     </a>
-                    
                 </div>
             </div>
         </div>

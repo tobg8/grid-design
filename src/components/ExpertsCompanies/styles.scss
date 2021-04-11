@@ -14,13 +14,13 @@
     }
     &__companies {
         border-bottom: 1px solid black;
-        padding: 1em 0;
+        // padding: 1em 0 0 0;
         display: flex;
         justify-content: space-between;
         max-height: 130px;
         &--modifier {
             border-top: 1px solid black;
-            padding: 0.5em;
+            // padding: 0.5em;
         }
     }
     &__hover-circle {
@@ -47,31 +47,32 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        min-height: 114px;
         &:hover .container__hover-circle{
             background-color: black;
             opacity: 1;
-            height: 118%;
-            width: 80%;
+            height: 100%;
+            width: 70%;
             visibility: visible;
             font-size: 1.2em;
         }
         &:hover .container__hover-circle--modifier {
             background-color: black;
             opacity: 1;
-            height: 140%;
-            width: 80%;
+            height: 100%;
+            width: 70%;
             visibility: visible;
             font-size: 1.2em;
         }
         &-logo {
-            height: 50%;
-            width: 50%;
+            height: 40%;
+            width: 40%;
             position: relative;
             &--modifier-apple {
                 transform: scale(1);
             }
             &--modifier-wolf {
-                transform: scale(3);
+                transform: scale(2.5);
             }
             &--modifier-virgin {
                 transform: scale(1.2);
