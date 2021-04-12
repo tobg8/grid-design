@@ -22,7 +22,6 @@
         transform: translateX(-0vw);
         transition: transform 500ms ease;
         mix-blend-mode: multiply;
-        
     }
     &__picture {
         width: 80vw;
@@ -32,6 +31,7 @@
         height: 100%;
         &--1 {
             background-image: url(../../assets/1.png);
+            
         }
         &--2 {
             background-image: url(../../assets/2.png);
@@ -47,7 +47,7 @@
         }
         &--6 {
             background-image: url(../../assets/6.png);
-            height: 105%;
+            background-position: bottom 0px left 0px;
         }
         &--7 {
             background-image: url(../../assets/7.png);
