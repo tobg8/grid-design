@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
 import GrowElementOnScroll from '../../hooks/GrowElementOnScroll';
 
-const Infos = () => {
+const Infos = ({ paragraph1, paragraph2, title}) => {
 
     const [circleRef, isVisible] = GrowElementOnScroll ({
         root: null,
@@ -12,14 +13,16 @@ const Infos = () => {
     
     return (
         <div className="infos">
-            <h1 className="infos__title"><div className={isVisible ? 'infos__circle infos__circle--modifier' : 'infos__circle'} />What is it</h1>
-            <p className="infos__paragraphs infos__paragraphs--modifier">An executive programme broken down into 5 intense 2-week modules in London and California</p>
-            <p className="infos__paragraphs" ref={circleRef}>
-                Forget boring professors and outdated business knowledge. 
-                You will be taught by CEOs, CTOs and Heads of Design from the top businesses, startups and products companies.
-            </p>
+            <h1 className="infos__title"><div className={isVisible ? 'infos__circle infos__circle--modifier' : 'infos__circle'} />{title}</h1>
+            <p className="infos__paragraphs infos__paragraphs--modifier">{paragraph1}</p>
+            <p className="infos__paragraphs" ref={circleRef}>{paragraph2}</p>
         </div>
     );
 };
+
+Infos.propTypes = {
+    paragraph1: PropTypes.string.isRequired,
+    paragraph2: PropTypes.string.isRequired,
+}
 
 export default Infos;
