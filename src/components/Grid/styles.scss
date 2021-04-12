@@ -69,8 +69,8 @@
         justify-content: center;
         align-items: center;
         background-color: $yellow;
-        height: 97%;
-        width: 97%;
+        height: 96%;
+        width: 96%;
         background-color: black;
         border-radius: 50%;
         border-left: 3px solid black;
@@ -137,7 +137,7 @@
         border-left: 0;
     }
     &__9 {
-        outline: 3px solid black;
+        border-right: 3px solid black;
         &:before {
             content:'';
             display: block;
@@ -156,7 +156,7 @@
         align-items: center;
         border-top: 3px solid black;
         border-bottom: 3px solid black;
-        border-left: 3px solid black;
+        border-left: 0px solid black;
         z-index: 1;
         
         &:after {

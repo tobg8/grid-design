@@ -23,6 +23,7 @@ const Infos = ({ paragraph1, paragraph2, title}) => {
 Infos.propTypes = {
     paragraph1: PropTypes.string.isRequired,
     paragraph2: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
 }
 
 export default Infos;
