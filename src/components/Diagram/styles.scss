@@ -1,0 +1,101 @@
+@import '../../styles/vars';
+
+.diagram {
+    width: 90%;
+    margin: 0 auto;
+    &__title {
+        width: 65%;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-family: $font;
+        font-weight: 600;
+        margin-bottom: 2em;
+    }
+    &__titles {
+        display: flex;
+        flex-direction:column;
+        width: 80%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+    }
+    &__goal {
+        font-family: $font;
+        min-height: 25px;
+        // visibility: hidden;
+        font-size: 1.2em;
+    }
+    &__unit {
+        font-family: $font;
+        text-transform: uppercase;
+        font-size: 2.6em;
+        opacity: 0.4;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        &--modifier {
+            opacity: 1;
+            transition: opacity 500ms ease;
+        }
+    }
+    &__container {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+    }
+    &__world {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    &__company {
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 10%;
+        right: 9%;
+        
+    }
+    &__team {
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        top: 20%;
+        right: 20%;
+    }
+    &__product {
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        top: 30%;
+        right: 30%;
+    }
+    &__human {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        top: 40%;
+        right: 40%;
+    }
+    &__svg {
+        width: 100%;
+        height: 100%;
+        opacity: .3;
+        box-sizing: border-box;
+        transform: rotate(30deg);
+        &--modifier {
+            transition: opacity 300ms ease;
+            transform: rotate(-30deg);
+        }
+    }
+    &__svg-in-view {
+        transform: rotate(0deg);
+        transition: transform 700ms ease;
+        transition: opacity 500ms ease;
+    }
+    
+}

@@ -6,6 +6,7 @@ import SocialBar from '../SocialBar'
 import Infos from '../Infos'
 import ExpertsCompanies from '../ExpertsCompanies';
 import Teachers from '../Teachers';
+import Diagram from '../Diagram';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           paragraph2="There are only 20 people in the first cohort. The earlier you apply the better chance you will have to join us in 2021. "
           title="who is it for"
         />
+        <Diagram />
     </div>
   );
 };
