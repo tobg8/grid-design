@@ -1,5 +1,6 @@
 <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="175" cy="175" r="174" fill="#FFE42B" stroke="black" stroke-width="2"/>
+<path d="M314 175C314 251.771 251.988 314 175.5 314C99.0119 314 37 251.771 37 175C37 98.229 99.0119 36 175.5 36C251.988 36 314 98.229 314 175Z" fill="#FFE42B" stroke="black" stroke-width="2"/>
 <path d="M28 258.798L48.8471 245" stroke="black"/>
 <path d="M302 245L323.541 257.688" stroke="black"/>
 <path d="M175 6V18.5V31" stroke="black"/>

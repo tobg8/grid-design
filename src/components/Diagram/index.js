@@ -4,9 +4,11 @@ import GrowElementOnScroll from '../../hooks/GrowElementOnScroll';
 
 import world from '../../assets/world.svg';
 import company from '../../assets/company.svg';
-import team from '../../assets/team.svg'
+import team from '../../assets/team.svg';
 import product from '../../assets/product.svg'
 import human from '../../assets/human.svg';
+
+
 
 
 const Diagram = () => {
