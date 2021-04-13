@@ -14,8 +14,8 @@ const Infos = ({ paragraph1, paragraph2, title}) => {
     return (
         <div className="infos">
             <h1 className="infos__title"><div className={isVisible ? 'infos__circle infos__circle--modifier' : 'infos__circle'} />{title}</h1>
-            <p className="infos__paragraphs infos__paragraphs--modifier">{paragraph1}</p>
-            <p className="infos__paragraphs" ref={circleRef}>{paragraph2}</p>
+            <p className="infos__paragraphs infos__paragraphs--modifier"  ref={circleRef}>{paragraph1}</p>
+            <p className="infos__paragraphs">{paragraph2}</p>
         </div>
     );
 };

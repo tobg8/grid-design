@@ -3,6 +3,7 @@
 .diagram {
     width: 90%;
     margin: 0 auto;
+    margin-top: 3em;
     &__title {
         width: 65%;
         text-transform: uppercase;
@@ -44,6 +45,9 @@
         width: 100%;
         height: 50vh;
         position: relative;
+        border-bottom: 1px solid black;
+        padding-bottom: 4em;
+        margin-bottom: 2em;
     }
     &__world {
         width: 99%;
@@ -57,7 +61,7 @@
         height: 81%;
         position: absolute;
         top: 9.5%;
-        right: 8%;
+        right: 8.3%;
         
     }
     &__team {

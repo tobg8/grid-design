@@ -7,6 +7,8 @@ import Infos from '../Infos'
 import ExpertsCompanies from '../ExpertsCompanies';
 import Teachers from '../Teachers';
 import Diagram from '../Diagram';
+import Price from '../Price';
+import Form from '../Form';
 
 const App = () => {
   return (
@@ -31,6 +33,14 @@ const App = () => {
           title="who is it for"
         />
         <Diagram />
+        <Price />
+        <Infos
+          title="apply now"
+          paragraph1="Leave your email to get more information and be updated when the application process starts. 
+          The earlier you apply the better chance you will have to join us in 2021."
+          paragraph2="If you have any questions, email ekaterina@futurelondonacademy.co.uk"
+        />
+        <Form />
     </div>
   );
 };
