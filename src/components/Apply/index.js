@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 import GrowElementOnScroll from '../../hooks/GrowElementOnScroll';
 
-const Infos = ({ paragraph1, paragraph2, title}) => {
+const Apply = ({ paragraph1, paragraph2, title}) => {
 
     const [circleRef, isVisible] = GrowElementOnScroll ({
         root: null,
@@ -12,18 +12,18 @@ const Infos = ({ paragraph1, paragraph2, title}) => {
     });
     
     return (
-        <div className="infos">
-            <h1 className="infos__title"><div className={isVisible ? 'infos__circle infos__circle--modifier' : 'infos__circle'} />{title}</h1>
-            <p className="infos__paragraphs infos__paragraphs--modifier"  ref={circleRef}>{paragraph1}</p>
-            <p className="infos__paragraphs test">{paragraph2}</p>
+        <div className="apply">
+            <h1 className="apply__title"><div className={isVisible ? 'apply__circle apply__circle--modifier' : 'apply__circle'} />{title}</h1>
+            <p className="apply__paragraphs apply__paragraphs--modifier"  ref={circleRef}>{paragraph1}</p>
+            <p className="apply__paragraphs apply__paragraphs--border">{paragraph2}</p>
         </div>
     );
 };
 
-Infos.propTypes = {
+Apply.propTypes = {
     paragraph1: PropTypes.string.isRequired,
     paragraph2: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
 }
 
-export default Infos;
+export default Apply;

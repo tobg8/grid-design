@@ -5,6 +5,7 @@ import Grid from '../Grid'
 import SocialBar from '../SocialBar'
 import Infos from '../Infos'
 import ExpertsCompanies from '../ExpertsCompanies';
+import Apply from '../Apply';
 import Teachers from '../Teachers';
 import Diagram from '../Diagram';
 import Price from '../Price';
@@ -38,7 +39,7 @@ const App = () => {
         />
         <Diagram />
         <Price />
-        <Infos
+        <Apply
           title="apply now"
           paragraph1="Leave your email to get more information and be updated when the application process starts. 
           The earlier you apply the better chance you will have to join us in 2021."
