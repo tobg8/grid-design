@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './styles.scss';
+import PropTypes from 'prop-types';
 
 import Field from './Field';
 
-const Form = () => {
+const Form = ({applyRef}) => {
 
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -30,7 +31,7 @@ const Form = () => {
     }
 
     return (
-        <form className="form" onSubmit={(mailValid && phone.length > 0 && name.length > 0) && handleFormSubmit}>
+        <form className="form" onSubmit={mailValid && phone.length > 0 && name.length > 0 ?  handleFormSubmit : undefined} ref={applyRef}>
             <div className="form__field-container">
                 <Field 
                     type="text"
@@ -69,5 +70,9 @@ const Form = () => {
         </form>
     );
 };
+
+Form.propTypes = {
+    applyRef:PropTypes.object.isRequired,
+}
 
 export default Form;

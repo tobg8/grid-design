@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.scss';
 
 import Grid from '../Grid'
@@ -11,10 +11,14 @@ import Price from '../Price';
 import Form from '../Form';
 
 const App = () => {
+  const applyRef = useRef(null);
+  const scroll = () => {
+    applyRef.current.scrollIntoView({behavior: 'smooth'});
+  }
   return (
     <div className="app">
       <main className="app__main">
-        <Grid />
+        <Grid scroll={scroll}/>
       </main>
         <SocialBar />
         <Infos 
@@ -40,7 +44,7 @@ const App = () => {
           The earlier you apply the better chance you will have to join us in 2021."
           paragraph2="If you have any questions, email ekaterina@futurelondonacademy.co.uk"
         />
-        <Form />
+        <Form applyRef={applyRef}/>
     </div>
   );
 };
