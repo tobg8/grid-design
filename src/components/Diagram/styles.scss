@@ -19,7 +19,7 @@
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 2em;
+        
     }
     &__goal {
         font-family: $font;
@@ -43,7 +43,7 @@
     }
     &__container {
         width: 100%;
-        height: 50vh;
+        height: 45vh;
         position: relative;
         border-bottom: 1px solid black;
         padding-bottom: 4em;

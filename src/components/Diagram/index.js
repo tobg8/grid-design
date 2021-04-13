@@ -133,7 +133,7 @@ const Diagram = () => {
                         style={isClicked === 'world' ? {opacity: '1'} : {opacity: '0.3'}} 
                     />
                 </div>
-                <div className="diagram__company" ref={circleRef}>
+                <div className="diagram__company">
                     <img 
                         onClick={() => {
                             setIsClicked('company');
@@ -169,6 +169,7 @@ const Diagram = () => {
                         className={isVisible ? 'diagram__svg diagram__svg-in-view' : 'diagram__svg'} 
                         src={team} alt=""
                         style={isClicked === 'team' ? {opacity: '1'} : {opacity: '0.3'}}
+                        ref={circleRef}
                     />
                 </div>
                 <div className="diagram__product">
