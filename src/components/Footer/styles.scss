@@ -1,0 +1,41 @@
+@import '../../styles/vars';
+
+.footer {
+    
+    width: 90%;
+    margin: 0 auto;
+    &__brand {
+        font-size: 1em;
+        font-family: $font;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__rights {
+        font-size: 0.6em;
+    }
+    &__credits {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__work {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        text-decoration: none;
+        color: black;
+        &--modifier {
+            margin-right: 3em;
+        }
+    }
+    &__author:after {
+        content: ""; 
+        display: block;  
+        width: 25%;
+        border-bottom: 2px solid black;
+        transition: width 300ms ease;
+        
+    }
+    &__author:hover::after{
+        width: 100%;
+    }
+}

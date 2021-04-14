@@ -10,6 +10,7 @@ import Teachers from '../Teachers';
 import Diagram from '../Diagram';
 import Price from '../Price';
 import Form from '../Form';
+import Footer from '../Footer';
 
 const App = () => {
   const applyRef = useRef(null);
@@ -21,7 +22,6 @@ const App = () => {
       <main className="app__main">
         <Grid scroll={scroll}/>
       </main>
-        <SocialBar />
         <Infos 
           paragraph1="An executive programme broken down into 5 intense 2-week modules in London and California"
           paragraph2="Forget boring professors and outdated business knowledge. 
@@ -46,6 +46,8 @@ const App = () => {
           paragraph2="If you have any questions, email ekaterina@futurelondonacademy.co.uk"
         />
         <Form applyRef={applyRef}/>
+        <Footer />
+        <SocialBar />
     </div>
   );
 };
