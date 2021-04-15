@@ -8,12 +8,43 @@ const Teachers = () => {
     const [sliderValue, setSliderValue] = useState(0);
     const [expertName, setExpertName] = useState('');
     const [expertCompany, setExpertCompany] = useState('');
+    const [expertNameSecond, setExpertNameSecond] = useState('');
+    const [expertCompanySecond, setExpertCompanySecond] = useState('');
 
     useEffect(() => {
+        if (window.screen.availWidth > 800) {
+            switch(sliderValue) {
+                case 0:
+                    setExpertName('Joanna Peña-Bickley');
+                    setExpertCompany('Amazon');
+                    setExpertNameSecond('Mickael Wolff');
+                    setExpertCompanySecond('Wolff Olins');
+                    break;
+                case -90:
+                    setExpertName('Helena Fuchs');
+                    setExpertCompany('ustwo');
+                    setExpertNameSecond('James Hilton');
+                    setExpertCompanySecond('AKQA/Native');
+                    break;
+                case -180:
+                    setExpertName('Luke Powell');
+                    setExpertCompany('Pentagram');
+                    setExpertNameSecond('Charly Lester');
+                    setExpertCompanySecond('Lumen');
+                    break;
+                case -230:
+                    setExpertName('Charly Lester');
+                    setExpertCompany('Lumen');
+                    setExpertNameSecond("Steve 'BUZZ' Pearce");
+                    setExpertCompanySecond('Skyscanner');
+                    break;
+                default:
+            }
+        }
         switch(sliderValue) {
             case 0 :
                 setExpertName('Joanna Peña-Bickley');
-                setExpertCompany('Amazon')
+                setExpertCompany('Amazon');
                 break;
             case -80:
                 setExpertName('Mickael Wolff');
@@ -42,7 +73,29 @@ const Teachers = () => {
             default:
                 console.log(sliderValue)
         }
-    }, [sliderValue])
+    }, [sliderValue]);
+
+
+    const handleArrowLeftDesktop = () => {
+        if (sliderValue === 0) {
+            return setSliderValue(-230)
+        }
+        if (sliderValue === -50) {
+            return setSliderValue(0);
+        }
+        
+        setSliderValue(sliderValue + 90)
+    }
+
+    const handleArrowRightDesktop = () => {
+        if (sliderValue === -180) {
+            return setSliderValue(-230);
+        }
+        if(sliderValue === -230) {
+            return setSliderValue(0);
+        }
+        setSliderValue(sliderValue - 90)
+    }
    
     const handleArrowLeft = () => {
         if (sliderValue === 0) {
@@ -73,18 +126,28 @@ const Teachers = () => {
                     <p className="teachers__expert-name">{expertName}</p>
                     <p className="teachers__expert-company">{expertCompany}</p>
                 </div>
+                
+                <div className="teachers__expert-infos--desktop">
+                    <p className="teachers__expert-name--desktop">{expertName}</p>
+                    <p className="teachers__expert-company--desktop">{expertCompany}</p>
+                </div>
+                <div className="teachers__expert-infos--desktop teachers__expert-infos--desktop--modifier">
+                    <p className="teachers__expert-name--desktop">{expertNameSecond}</p>
+                    <p className="teachers__expert-company--desktop">{expertCompanySecond}</p>
+                </div>
+               
                 <div className="teachers__arrowContainer">
                     <img 
                         src={arrowLeft} 
                         alt="icon arrow left" 
                         className="teachers__arrow"
-                        onClick={handleArrowLeft}
+                        onClick={window.screen.availWidth > 800 ? handleArrowLeftDesktop : handleArrowLeft}
                     />
                     <img 
                         src={arrowRight} 
                         alt="icon arrow right" 
                         className="teachers__arrow"
-                        onClick={handleArrowRight}
+                        onClick={window.screen.availWidth > 800 ? handleArrowRightDesktop : handleArrowRight}
                     />
                 </div>
             </section>

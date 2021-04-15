@@ -62,24 +62,32 @@
         &__circle {
             align-self: center;
             margin-bottom: 1em;
+            &--modifier {
+                height: 60px;
+                width: 60px;
+            }
         }
         &__container {
             width: 50%;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             font-size: 1.5em;
             margin-top: 2em;
             margin-right: 5.2em;
         }
         &__title {
             text-align: left;
-            font-size: 5em;
+            font-size: 7em;
             width: 10%;
+            align-self: flex-start;
         }
         &__paragraphs {
             width: 100%;
             display: flex;
             flex-direction: column;
+            font-size: 1.5em;
         }
     }
 }

@@ -108,8 +108,8 @@
     .diagram {
         &__title {
             width: 30%;
-            font-size: 1em;
-            margin-bottom: 5em;
+            font-size: 1.4em;
+            margin-bottom: 2em;
         }
         &__titles {
             display: flex;
@@ -129,7 +129,7 @@
             font-size: 2em;
             width: 100%;
             position: absolute;
-            top: -30px;
+            top: 0px;
         }
         &__big-container {
             width: 100%;

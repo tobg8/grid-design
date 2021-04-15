@@ -1,7 +1,9 @@
 @import '../../styles/vars';
 
 .teachers {
-    
+    &__expert-infos--desktop {
+        display: none;
+    }
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -32,7 +34,6 @@
         height: 100%;
         &--1 {
             background-image: url(../../assets/1.png);
-            
         }
         &--2 {
             background-image: url(../../assets/2.png);
@@ -56,9 +57,11 @@
     }
 
     &__infosContainer {
-        
         display: flex;
         justify-content: space-between;
+        &--desktop {
+            display: none;
+        }
     }
     &__expert-infos {
         width: 60%;
@@ -67,8 +70,8 @@
         justify-content: center;
         align-items: flex-start;
         font-family: $font;
-        
         font-weight: 700;
+        
         
     }
     &__expert-name {
@@ -78,15 +81,61 @@
         font-size: 1.2em;
     }
     &__expert-company {
-       
         margin: 0;
     }
     &__arrowContainer {
         width: 40%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     &__arrow {
-        width: 45%;
+        width: 35%;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .teachers {
+        &__title {
+            font-size: 3em;
+        }
+        &__container {
+            width: 320vw;
+            min-height: 50vh;
+        }
+        &__picture {
+            width: 70vw;
+            background-size: contain;
+        }
+        &__arrowContainer {
+            margin-top: 1em;
+            justify-content: flex-end;
+            margin-left: 10em;
+            width: 30%;
+        }
+        &__arrow {
+            width: 100%;
+            margin: 1em;
+        }
+        &__expert-infos {
+            display: none;
+        }
+        &__expert-infos--desktop {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            &--modifier {
+               margin-right: -6em;
+            }            
+        }
+        &__expert-name--desktop {
+            font-size: 2em;
+            margin: 0;
+            align-self: flex-end;
+        }
+        &__expert-company--desktop {
+            font-size: 1.8em;
+            align-self: flex-end;
+        }
     }
 }

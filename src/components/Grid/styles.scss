@@ -273,3 +273,10 @@
         opacity: 1;
     }
 }
+
+
+@media screen and (min-width: 800px) {
+    .grid-container {
+        display: none;
+    }
+}

@@ -1,0 +1,131 @@
+[33mcommit ce77dd995514a403edbbe040ec07416385894b10[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Thu Apr 15 04:16:13 2021 +0200
+
+    idk
+
+[33mcommit d63a307bea55970a49c3499e90b60c4847dc3d36[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Thu Apr 15 03:57:01 2021 +0200
+
+    minor fix
+
+[33mcommit dba5fac272f929d55a521f8d905bf9b267f67ebd[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Thu Apr 15 03:53:44 2021 +0200
+
+    worst media queries ever
+
+[33mcommit 5a9f795aec22c0065958ed1db808ef653c0e2f8a[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Thu Apr 15 01:23:36 2021 +0200
+
+    footer component
+
+[33mcommit 1e6be20397c859491afdd65b2819465982050329[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Tue Apr 13 18:19:52 2021 +0200
+
+    animation on mail
+
+[33mcommit b271b321cca1cd991fdfc96ca0b97171cd5c9cae[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Tue Apr 13 17:41:17 2021 +0200
+
+    fix color placeholder form
+
+[33mcommit acca7d70dc31441bd5a799c52f8bcb2f5cb7cbd0[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Tue Apr 13 17:23:07 2021 +0200
+
+    scroll on apply button on grid and PropTypes validation
+
+[33mcommit f23d066abd85fb1508f531233b3385918829fe33[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Tue Apr 13 17:04:41 2021 +0200
+
+    change ref position to delay diagram animation
+
+[33mcommit bea4812f0accae451d55aabf31d3a85b14888e1a[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Tue Apr 13 16:57:47 2021 +0200
+
+    contact Form doneé
+
+[33mcommit 91fd7abe1c1487c21dcfee6f328abdbc517bc616[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Tue Apr 13 13:18:14 2021 +0200
+
+    more fixes to diagram
+
+[33mcommit 51e777882f1acad19b8381d8eb922421c039e18f[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Tue Apr 13 12:40:51 2021 +0200
+
+    fix svg diagram
+
+[33mcommit 768a066714c8218df576659be5c2de013d2d1a74[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Tue Apr 13 00:38:14 2021 +0200
+
+    diagram done, need to fix svg
+
+[33mcommit 477e4a248df18b77581161e34a06d71997f32042[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Mon Apr 12 19:39:21 2021 +0200
+
+    change bg-color and fix grid-border
+
+[33mcommit a6d735956339532593a422bfaabbcb74c9a80ac2[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Mon Apr 12 19:10:23 2021 +0200
+
+    Infos component now reusable
+
+[33mcommit 932dc47c12f85d579a81bf47bceca7d64217f050[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Mon Apr 12 18:51:12 2021 +0200
+
+    fix background-image on carousel
+
+[33mcommit 7a52869692df348f46d1e3fd669e94725ac05bfb[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Mon Apr 12 01:36:24 2021 +0200
+
+    carousel teachers
+
+[33mcommit c29534fca6c56b5783b0806de32ccc49ff5c1088[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Sun Apr 11 18:30:23 2021 +0200
+
+    freeze circle state to true when entering viewport
+
+[33mcommit 099c5ab1d13893bdfc3f42bd435d472901cc5992[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Sun Apr 11 16:23:38 2021 +0200
+
+    fix expertsCompanies black-circle on hover
+
+[33mcommit ad736500edffe7fb979bb577408676a32f23b3eb[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Sun Apr 11 16:11:26 2021 +0200
+
+    animation on scroll on Infos component
+
+[33mcommit 5d876d311d6b7238fa48b55f7a3717df4b4dbaa6[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Sat Apr 10 17:08:08 2021 +0200
+
+    hover on companies section - vars-scss
+
+[33mcommit 115346b71501578c20899e0f1a421fe7b0316dc3[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Fri Apr 9 00:25:17 2021 +0200
+
+    fix horizontal scrolling on mobile
+
+[33mcommit 05ce58f0a7c24ceab0e2470c3a72939ceedd68bc[m
+Author: TheoB-png <theo.beloeil.pro@gmail.com>
+Date:   Fri Apr 9 00:18:12 2021 +0200
+
+    init project + grid and expert section
