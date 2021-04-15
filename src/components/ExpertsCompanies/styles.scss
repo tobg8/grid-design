@@ -94,3 +94,37 @@
         }
     }
 }
+
+
+@media screen and (min-width: 800px) {
+    .container {
+        margin-bottom: 6em;
+        &__title {
+            width: 30%;
+            font-size: 2em;
+        }
+        &__companies {
+            padding-bottom: 3em;
+            &--modifier {
+                margin-top: 3em;
+                border-top: none;
+            }
+        }
+        &__company {
+            &:hover .container__hover-circle {
+                width: 200px;
+                height: 200px;
+                font-size: 2em;
+            }
+        }
+        &__company {
+            &-logo {
+                width: 50%;
+                height: 50%;
+            }
+        }
+        &__company-logo--modifier-fb {
+            width: 100%;
+        }
+    }
+}
