@@ -48,8 +48,9 @@
         display: flex;
         justify-content: space-between;
         &__circle {
-            align-self: center;
-            margin-bottom: 1em;
+            margin-top: 0.5em;
+            align-self: flex-start;
+            
         }
         &__container {
             width: 50%;
@@ -59,7 +60,8 @@
             text-align: left;
             font-size: 5em;
             width: 10%;
-            line-height: 0.8;
+            line-height: 1.4;
+            text-align: start;
         }
         &__paragraphs {
             width: 100%;
