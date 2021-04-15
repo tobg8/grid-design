@@ -26,11 +26,13 @@ const App = () => {
   return (
     <div className="app">
       <main className="app__main" />
+      <Grid />
       <Infos
         paragraph1="An executive programme broken down into 5 intense 2-week modules in London and California"
         paragraph2="Forget boring professors and outdated business knowledge.
           You will be taught by CEOs, CTOs and Heads of Design from the top businesses, startups and products companies."
         title="What is it"
+        modifier="true"
       />
       <ExpertsCompanies />
       <Teachers />

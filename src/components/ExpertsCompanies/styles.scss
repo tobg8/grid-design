@@ -3,13 +3,11 @@
 .container {
     width: 90%;
     margin: 0 auto;
-    margin-top: 110%;
     &__title {
         text-align: left;
         width: 80%;
         font-size: 1em;
         text-transform: uppercase;
-        
         padding-bottom: 1em;
         letter-spacing: 1px;
     }
@@ -98,6 +96,7 @@
 
 @media screen and (min-width: 800px) {
     .container {
+        margin-top: 0;
         margin-bottom: 6em;
         &__title {
             width: 30%;
