@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { useMediaQuery } from 'react-responsive';
 
 import Square from './Square.js';
+import GridDesktop from './GridDesktop';
 
 const Grid = ({ scroll }) => {
   const isDesktop = useMediaQuery({
@@ -12,10 +13,10 @@ const Grid = ({ scroll }) => {
   const squares = Array.from(Array(14));
 
   return (
-    <div className="grid-container">
+    <div>
       {isDesktop
-        ? <div>Cool</div>
-        : squares.map((_, index) => <Square key={index} className={`square square__${index}`} scroll={scroll} />)}
+        ? <GridDesktop scroll={scroll}/>
+        : <div className="grid-container">{squares.map((_, index) => <Square key={index} className={`square square__${index}`} scroll={scroll} />)}</div>}
     </div>
   );
 };

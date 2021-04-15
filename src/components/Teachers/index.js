@@ -1,9 +1,3 @@
-/* eslint-disable import/no-useless-path-segments */
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable import/no-useless-path-segments */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable import/no-useless-path-segments */
 import React, { useState, useEffect } from 'react';
 import './styles.scss';
 

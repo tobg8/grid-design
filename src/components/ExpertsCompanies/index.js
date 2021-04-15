@@ -1,8 +1,3 @@
-// eslint-disable-next-line import/named
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/no-useless-path-segments */
-/* eslint-disable import/named */
-/* eslint-disable import/no-unresolved */
 import React from 'react';
 import './styles.scss';
 import { useMediaQuery } from 'react-responsive';

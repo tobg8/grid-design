@@ -1,9 +1,3 @@
-/* eslint-disable import/no-useless-path-segments */
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable import/no-useless-path-segments */
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable import/extensions */
-/* eslint-disable import/no-unresolved */
 import React, { useRef } from 'react';
 import './App.scss';
 
@@ -26,7 +20,7 @@ const App = () => {
   return (
     <div className="app">
       <main className="app__main" />
-      <Grid />
+      <Grid scroll={scroll}/>
       <Infos
         paragraph1="An executive programme broken down into 5 intense 2-week modules in London and California"
         paragraph2="Forget boring professors and outdated business knowledge.

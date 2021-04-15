@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
@@ -29,7 +28,7 @@ Infos.propTypes = {
   paragraph1: PropTypes.string.isRequired,
   paragraph2: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  modifier: PropTypes.string.isRequired,
+  modifier: PropTypes.string
 };
 
 export default Infos;
