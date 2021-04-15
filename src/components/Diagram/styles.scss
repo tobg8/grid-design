@@ -4,6 +4,9 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 3em;
+    &__big-container {
+        border-bottom: 1px solid black
+    }
     &__title {
         width: 65%;
         text-transform: uppercase;
@@ -45,7 +48,6 @@
         width: 100%;
         height: 45vh;
         position: relative;
-        border-bottom: 1px solid black;
         padding-bottom: 4em;
         margin-bottom: 2em;
     }
@@ -88,7 +90,7 @@
     &__svg {
         width: 100%;
         height: 100%;
-        opacity: .3;
+        opacity: .1;
         box-sizing: border-box;
         transform: rotate(30deg);
         &--modifier {
@@ -100,5 +102,158 @@
         transform: rotate(0deg);
         transition: transform 700ms ease;
     }
-    
 }
+
+@media screen and (min-width: 800px) {
+    .diagram {
+        &__title {
+            width: 30%;
+            font-size: 1em;
+            margin-bottom: 5em;
+        }
+        &__titles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+            position: relative;
+            text-align: start;
+            width: 50%;
+        }
+        &__unit {
+            font-size: 4em;
+            width: 100%;
+            margin-bottom: -0.3em;
+        }
+        &__goal {
+            font-size: 2em;
+            width: 100%;
+            position: absolute;
+            top: -30px;
+        }
+        &__big-container {
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid black;
+            padding-bottom: 10em;
+        }
+        &__container {
+            box-sizing: border-box;
+            width: 60%;
+        }
+        &__world {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            right: 1%;
+        }
+        &__company {
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+        }
+        &__team {
+            width: 62%;
+            height: 60%;
+            position: absolute;
+            top: 20%;
+            right: 20%;
+            
+        }
+        &__product {
+            width: 40%;
+            height: 40%;
+            position: absolute;
+            top: 30%;
+            right: 31%;
+            
+        }
+        &__human {
+            width: 20%;
+            height: 20%;
+            position: absolute;
+            top: 40%;
+            right: 41%;
+            
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .diagram {
+        &__title {
+            width: 30%;
+            font-size: 2em;
+            margin-bottom: 5em;
+        }
+        &__titles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+            position: relative;
+            text-align: start;
+            width: 30%;
+        }
+        &__unit {
+            font-size: 6em;
+            width: 100%;
+            margin-bottom: -0.3em;
+        }
+        &__goal {
+            font-size: 2em;
+            width: 100%;
+            position: absolute;
+            top: -30px;
+        }
+        &__big-container {
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid black;
+            padding-bottom: 10em;
+        }
+        &__container {
+            box-sizing: border-box;
+            width: 60%;
+        }
+        &__world {
+            width: 140%;
+            height: 140%;
+            position: absolute;
+            top: -20%;
+            right: -10%;
+        }
+        &__company {
+            width: 111%;
+            height: 111%;
+            position: absolute;
+            top: -5.5%;
+            right: 4%;
+        }
+        &__team {
+            width: 83%;
+            height: 83%;
+            position: absolute;
+            top: 8.7%;
+            right: 18.8%;
+        }
+        &__product {
+            width: 55%;
+            height: 55%;
+            position: absolute;
+            top: 23%;
+            right: 32.8%;
+        }
+        &__human {
+            width: 27%;
+            height: 27%;
+            position: absolute;
+            top: 37%;
+            right: 46.7%;
+        }
+    }
+}
+

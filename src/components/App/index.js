@@ -46,8 +46,8 @@ const App = () => {
           paragraph2="If you have any questions, email ekaterina@futurelondonacademy.co.uk"
         />
         <Form applyRef={applyRef}/>
-        <Footer />
         <SocialBar />
+        <Footer />
     </div>
   );
 };

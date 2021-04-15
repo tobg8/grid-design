@@ -1,9 +1,9 @@
 @import '../../styles/vars';
 
 .footer {
-    
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 1em;
     &__brand {
         font-size: 1em;
         font-family: $font;
@@ -37,5 +37,27 @@
     }
     &__author:hover::after{
         width: 100%;
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 800px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        &__brand {
+            width: 40%;
+        }
+        &__credits {
+            width: 60%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__work {
+            &--modifier {
+                margin-right: 0;
+            }
+        }
     }
 }

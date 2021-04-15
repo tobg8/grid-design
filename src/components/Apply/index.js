@@ -14,8 +14,11 @@ const Apply = ({ paragraph1, paragraph2, title}) => {
     return (
         <div className="apply">
             <h1 className="apply__title"><div className={isVisible ? 'apply__circle apply__circle--modifier' : 'apply__circle'} />{title}</h1>
-            <p className="apply__paragraphs apply__paragraphs--modifier"  ref={circleRef}>{paragraph1}</p>
-            <p className="apply__paragraphs apply__paragraphs--border">{paragraph2}</p>
+            <div className="apply__container">
+                <p className="apply__paragraphs apply__paragraphs--modifier"  ref={circleRef}>{paragraph1}</p>
+                <p className="apply__paragraphs apply__paragraphs--border">{paragraph2}</p>
+            </div>
+            
         </div>
     );
 };

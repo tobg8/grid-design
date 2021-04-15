@@ -24,7 +24,8 @@ const Diagram = () => {
 
     return (
         <div className="diagram">
-            <h3 className="diagram__title">Understand how to lead prople and build design-led businesses, while making your life and the world better</h3>
+            <h3 className="diagram__title">Understand how to lead prople and build design-led businesses, while making your life and the world better.</h3>
+            <div className="diagram__big-container">
             <div className="diagram__titles">
                 <div className="diagram__goal">{sentence}</div>
                 <div 
@@ -213,6 +214,7 @@ const Diagram = () => {
                     />
                 </div>
             </section >
+            </div>
         </div>
     );
 };
