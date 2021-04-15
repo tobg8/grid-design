@@ -1,31 +1,31 @@
 import { useEffect, useRef, useState } from 'react';
 
 const GrowElementOnScroll = (options) => {
-    const circleRef = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
+  const circleRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-    const callbackFunction = (entries) => {
-        const [entry] = entries;
-        // we don't want to reset state to false, our circle will get his final form once and for all
-        if (entry.isIntersecting === false) {
-            return
-        }
-        setIsVisible(entry.isIntersecting);
+  const callbackFunction = (entries) => {
+    const [entry] = entries;
+    // we don't want to reset state to false, our circle will get his final form once and for all
+    if (entry.isIntersecting === false) {
+      return;
     }
+    setIsVisible(entry.isIntersecting);
+  };
 
-    useEffect(() => {
-        const currentRef = circleRef.current;
-        const observer = new IntersectionObserver(callbackFunction, options);
+  useEffect(() => {
+    const currentRef = circleRef.current;
+    const observer = new IntersectionObserver(callbackFunction, options);
 
-        if (circleRef.current) {
-            observer.observe(circleRef.current);
-        }
-        return () => {
-            if (currentRef) observer.unobserve(currentRef)
-        }
-    }, [circleRef, options])
+    if (circleRef.current) {
+      observer.observe(circleRef.current);
+    }
+    return () => {
+      if (currentRef) observer.unobserve(currentRef);
+    };
+  }, [circleRef, options]);
 
-    return [circleRef, isVisible]
-}
+  return [circleRef, isVisible];
+};
 
 export default GrowElementOnScroll;
