@@ -280,13 +280,13 @@
     margin: 0 auto;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 25%);
-    border: 3px solid black;
   }
   .desktop__cell {
     font-family: $font;
-    border: 2px solid black;
+    border: 1px solid black;
     text-transform: uppercase;
     box-sizing: border-box;
+    outline: 1px solid black;
     &::before {
       content:'';
       padding-top: 100%;
@@ -295,7 +295,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-bottom: 3px solid black;
       &-paragraph {
         width: 40%;
         font-size: 1.5em;
@@ -314,7 +313,7 @@
         border: 20px solid black;
         animation: squareReduce 5s infinite;
         animation-delay: 2s;
-        outline: 2px solid black;
+        outline: 1px solid black;
       }
       
     }
@@ -330,8 +329,7 @@
       padding-right: 2em;
       font-size: 1.5em;
       font-weight: 600;
-      border-bottom: 3px solid black;
-      border-left: 2px solid black;
+      
     }
     &--4 {
       grid-column-start: 5;
@@ -343,14 +341,15 @@
       border-bottom-right-radius: 210px;
       padding-left: 0.1em;
       border-top-right-radius: 210px;
-      border-left: 0;
+      
     }
     &--5 {
-      border-left: 3px solid black;
+      
     }
     &--6 {
       height: 100%;
       width: 100%;
+      
       &::after {
       display: inline-block;
       width: 100%;
@@ -367,6 +366,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
       &-paragraph {
         width: 40%;
         transform: rotate(-45deg);
@@ -403,8 +403,7 @@
     }
     &--12 {
       border-top: none;
-      border-right: 3px solid black;
-      border-left: 3px solid black;
+      
     }
     &--13 {
       display: inline-block;
@@ -413,10 +412,10 @@
       content: '';
       background-color: black;
       border-radius: 50%;
+      
     }
     &--14 {
-      border-left: 3px solid black;
-      border-top: 3px solid black;
+     
     }
     &--15 {
       grid-column-start: 6;
@@ -428,7 +427,6 @@
       padding-left: 1em;
       font-weight: 600;
       line-height: 0.9;
-      border-bottom: 3px solid black;
     }
     &--16 {
       grid-column-start: 3;
@@ -439,6 +437,7 @@
       background-color: black;
       color: $yellow;
       font-size: 3em;
+      
       cursor: pointer;
     }
     &--18 {
@@ -448,16 +447,16 @@
       content: '';
       background-color: black;
       border-radius: 50%;
+      
     }
     &--19 {
-      border-top: none;
-      border-left: 3px solid black;
+      
     }
     &--20 {
-      border-top: none;
+      
     }
     &--17 {
-      border-right: 3px solid black;
+      
     }
   }
 }
