@@ -28,7 +28,7 @@ const GridDesktop = ({ scroll }) => {
       <div className="desktop__cell desktop__cell--13" />
       <div className="desktop__cell desktop__cell--14"/>
       <div className="desktop__cell desktop__cell--15">
-        Finally a business programme for design leaders
+        FInally, a busIneSs programme for desIgn leaders
       </div>
       <div className="desktop__cell desktop__cell--16" onClick={scroll}>
         Apply Now

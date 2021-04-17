@@ -349,7 +349,7 @@
     &--6 {
       height: 100%;
       width: 100%;
-      
+      outline: 0;
       &::after {
       display: inline-block;
       width: 100%;
@@ -360,6 +360,7 @@
       animation: flip 3s infinite;
       animation-timing-function: cubic-bezier(1,.02,.32,.84);
       }
+      
       
     }
     &--7 {
@@ -423,7 +424,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 3.5em;
+      font-size: 2.5em;
       padding-left: 1em;
       font-weight: 600;
       line-height: 0.9;
