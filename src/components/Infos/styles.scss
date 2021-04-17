@@ -8,14 +8,15 @@
       margin-bottom: 5em;
     }
     &__title {
-        font-size: 2.8em;
+        font-size: 2.3em;
+        white-space: nowrap;
         font-family: $font;
         text-align: center;
         display: flex;
         align-items: center;
         text-transform: uppercase;
         position: relative;
-        padding-left: 1em;
+        padding-left: 1.2em;
     }
     &__circle {
         position: absolute;
@@ -55,7 +56,7 @@
           margin-top: 60em;
         }
         &__circle {
-            margin-top: 0.5em;
+            margin-top: 0em;
             align-self: flex-start;
             &--modifier {
               height: 60px;
@@ -68,7 +69,7 @@
         }
         &__title {
             text-align: left;
-            font-size: 5em;
+            font-size: 4em;
             width: 10%;
             text-align: start;
             align-self: flex-start;

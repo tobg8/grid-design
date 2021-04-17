@@ -9,6 +9,7 @@ const Form = ({ applyRef }) => {
   const [phone, setPhone] = useState('');
   const [mail, setMail] = useState('');
   const [mailValid, setMailValid] = useState(false);
+  const [emailSent, setEmailSent] = useState(false);
 
   const validateEmail = (email) => {
     setMail(email);
@@ -27,6 +28,7 @@ const Form = ({ applyRef }) => {
     setPhone('');
     setMail('');
     setMailValid(false);
+    setEmailSent(true);
   };
 
   return (
@@ -59,13 +61,23 @@ const Form = ({ applyRef }) => {
         <p className="form__show-mail">{mail}</p>
         <div className={mailValid ? 'form__circle' : 'form__circle form__circle--modifier'} />
       </div>
-      <button
+      {emailSent ? (
+        <div className="form__success-email">
+          <p className="form__success-title">Thank You</p>
+          <p className="form__sucess-title form__success-title--modifier">
+            This is a fake email actually there is no back-end treatment of this request. <br />
+            Check <a className="form__success-link" href="https://bauhaus.futurelondonacademy.co.uk/">https://bauhaus.futurelondonacademy.co.uk/</a> for more infos
+          </p>
+        </div>
+      ) : (
+        <button
         type={mailValid && phone.length > 0 && name.length > 0 ? 'submit' : 'button'}
         className="form__button"
         style={mailValid && phone.length > 0 && name.length > 0 ? { opacity: '1' } : { opacity: '0.4' }}
-      >
-        submit
-      </button>
+        >
+          submit
+        </button>
+      )}
     </form>
   );
 };
